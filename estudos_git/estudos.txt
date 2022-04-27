@@ -1,0 +1,22 @@
+# Git & Github
+
+## O que é o Git?
+
+É um sistema criado para versionar códigos de maneira distribuida, onde podemos contribuir com outros desenvolvedores ao mesmo tempo e temos a autonomia de fazer testes antes de validar o código final.
+
+### Iniciando Git em um repositorio
+
+Pode ser usado o Git Bash Here para fazer todo o processo:
+- mkdir (make diretory) podemos usar para criar pastas
+	Apos a criação da pasta devemos inicar o git no repositorio.
+- git init = para iniciar o git na pasta
+	Para verificar se o git foi iniciado podemos usar o comando "ls -a" (-a é para mostrar arquivos ocultos), e se deu certo teremos o arquivo .git.
+- echo > (arquivo.extenção) para a criação de arquivos
+	Ou criar o arquivo pelo VScode por exemplo.
+
+### Apos a criação dos arquivos, criar o commit e enviar para o Git.
+
+- git status para ver se tem arquivos a ser "comitados"
+- git add. (para todos os arquivos), git add (nome do arquivo) se deseja comitar apenas 1 arquivo.
+- git status (para verificar se as alterações foram aplicadas)
+- git commit -m " " (-m para atribuir uma mensagem, e a mensagem deve ser digitada dentro das aspas... Pequeno resumo da criação/alteração para sabermos nos localizar melhor)
