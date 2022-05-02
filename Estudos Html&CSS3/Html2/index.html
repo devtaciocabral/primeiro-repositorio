@@ -1,0 +1,66 @@
+<!-- Para iniciar a marcação HTML precisamos dizer ao browser que iremos iniciar o tipo de documento html -->
+<!-- IMPORTANTE: IDENTAR O CÓDIGO AJUDA NA ORGANIZAÇÃO DO CÓDIGO E FAZER COMENTÁRIOS PARA FICAR MAIS FÁCIL A COMPREENSÃO DO CÓDIGO -->
+
+<!doctype html>
+
+<!-- A marcação <HTML></HTML> é onde irá dizer o navegador onde começa e onde termina o documento -->
+<html>
+
+    <!-- Na marcação HEAD podemos colocar metadados, codigos javascript, titulo da página e etc.. "Tudo que não se vê na pagina" -->
+    <head>
+        <!-- Dentro de cada tag conseguimos colocar atributos como por exemplo o "<meta charset="utf-8>"(defite a codificação usado na pag web, este por exemplo permite que o navegador leia os acentos das palavras), a tag meta nao precisa fazer o fechamento de tag porque fazemos as configurações fazemos com o atributo "selfclose" -->
+        <meta charset="utf-8">
+        <title>Estudos HTML</title>
+    </head>
+
+    <!-- Na marcação em BODY podemos colocar o conteudo que será mostrado na nossa página como imagens, links, textos e etc...  -->
+    <body>
+
+        <!--  Tags de cabeçalho, para inserir os titulos e subtitulos usamos "h1" sendo ele para titulo principal, "h2" para subtitulos e assim por diante, para fazer a quebra de linha usamos <br> break/quebrar, <p></p> para criar um bloco de parágrafo -->
+        <h1>Este é meus estudos</h1>
+        <p>Teste de quebra de linha</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec orci faucibus.</p>
+
+        <!-- <HR> caso queira separar uma seção de outra, essa marcação adiciona uma linha horizintal-->
+        <!-- Formatação de textos: <strong> para negrito, <em> para itálico, <u> para underline, <strike> para texto "errado" -->
+        <hr>
+        
+        <h2>Formatação de Texto</h2>
+        <p><em>Teste</em> de <strong>quebra</strong> de linha</p>
+        <p>Lorem <u>ipsum</u> dolor sit amet, <strike>consectetur</strike> adipiscing elit. Maecenas nec orci faucibus.</p>
+        <hr>
+
+        <!-- Lista não ordenadas: <ul> = lista não ordenada; <li> = cria os itens da lista -->
+        <h2>Listas ordenadas e não ordenadas</h2>
+        <h3>Lista Não ordenada</h3>
+        <!-- pode ser usado o "type" para atribuir o tipo (circle, square, disc) -->
+        <ul type="disc">
+            <li>Notebook</li>
+            <li>Tablet</li>
+            <li>Bateria</li>
+        </ul>
+        <hr>
+
+        <h3>Lista ordenada</h3>
+        <!-- Listas ordenadas: <ol> = lista ordenada; <li> = cria os itens da lista -->
+        <!-- pode ser usado o "type" para atribuir o tipo (1, A, a, I, i) -->
+        <ol type="1">
+            <li>Quais configurações do notebook?</li>
+            <li>Quais configurações do tablet?</li>
+            <li>Quantos anos dura a bateria?</li>
+        </ol>
+        <hr>
+
+        <h2>Imagens</h2>
+        <!-- Para inserir a imagem <img src="nome_da_imagem"> para abrir a imagem no diretório <img src="caminho da imagem">, tem a possibilidade de usar link na web e tambem o "alt" <alt="Descricao da imagem"> texto alternativo para os leitores de tela possam ler a imagem -->
+        <!-- width: largura; height: altura ... pode ser usado tanto em pixel quanto em porcentagem o tamanho da imagem-->
+        <img src="imagens/binario.png" alt="Imagem Binária" width="30%" height="30%"> 
+        <hr>
+
+        <h2>Links</h2>
+        <!--  Quando for criar uma site, a página nomeada como "index" será carregada primeiro pelos servidores -->
+        <!-- Para fazer os links usamos a tag <a> de âncora, <a href="URL" ou "mailto:seu_email" ou "tel:01233456" "nome do arquivo na pasta"> -->
+        <a href="contato.html" target="_blank">Página de Contatos</a>
+    </body>
+
+</html>
