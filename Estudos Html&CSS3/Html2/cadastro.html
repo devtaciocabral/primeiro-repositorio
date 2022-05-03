@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <h1>Cadastre-se</h1>
+        <form>
+            Nome Completo:<br>
+            <input type="text" name="nome"><br><br>
+            
+            Sexo:<br>
+            <!-- o tipo "radio" permite a opção de seleção, para que a selecao funcione corretamente "apenas 1 unica opção todos os "name=name" devem ser iguais-->
+            <!-- para fazer a capitação do valor que foi selecionado e fazer o tratamento do dados com outra linguagem de programação devemos usar "value"-->
+            <input type="radio" name="sexo" value="M">Masculino<br>
+            <input type="radio" name="sexo" value="F">Feminino<br>
+            <input type="radio" name="sexo" value="O">Prefiro não informar<br><br>
+            
+            Interesses:<br>
+            <!-- <chackbox> pois o usuario pode ter mais que um interesse, também permite selecionar mais de 1 opção -->
+            <input type="checkbox" name="interesses" value="interesses">Futebol<br>
+            <input type="checkbox" name="interesses" value="interesses">E-sports<br>
+            <input type="checkbox" name="interesses" value="interesses">Sinuca<br><br>
+
+            Estado:<br>
+            <!-- Poderia ser usado o "radio", porém, existe uma outra opção <select> recomendado apenas para quando temos listas grandes  -->
+            <select name="estado">
+                <option value="sp">SP</option>
+                <option value="sc">SC</option>
+                <option value="rj">RJ</option>
+            </select><br><br>
+
+            Observações:<br>
+            <!-- Insere uma caixa onde pode escrever um texto -->
+            <textarea></textarea><br><br>
+
+            <input type="submit" value="cadastrar"><br>
+        </form>
+    </body>
+</html>

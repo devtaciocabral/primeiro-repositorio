@@ -61,6 +61,73 @@
         <!--  Quando for criar uma site, a página nomeada como "index" será carregada primeiro pelos servidores -->
         <!-- Para fazer os links usamos a tag <a> de âncora, <a href="URL" ou "mailto:seu_email" ou "tel:01233456" "nome do arquivo na pasta"> -->
         <a href="contato.html" target="_blank">Página de Contatos</a>
+        <hr>
+
+        <h2>Tableas</h2>
+        <!--Dentro das <table> conseguimos colocar atribulos como borda em pixels
+            para adicionar uma linha na tabela <tr> e dentro da <tr> precisamos colocar as informações da tabela com <td>, <th> para o titulo da tabela-->
+        <table border="2" width="40%">
+            <tr>
+                <!-- Linha 1 -->
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <!-- Linha 2 -->
+                <td>001</td>
+                <td>Notebook</td>
+                <td>R$3.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- Linha 3 -->
+                <td>002</td>
+                <td>Tablet</td>
+                <td>R$900,50</td>
+            </tr>
+
+            <tr>
+                <!-- Linha 4 -->
+                <td>Desconto</td>
+                <!--colsplan="" define quantas celulas vamos agrupar; rowsplan="" linhas -->
+                <td colspan="2">R$ 10,00</td>
+            </tr>
+
+            <tr>
+                <td>Exemplo</td>
+                <Td rowspan="2">exemplo</Td>
+            </tr>
+            <tr>
+                <Td>exemplo</Td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2>Formulários</h2>
+        <h3>Login</h3>
+
+        <!--<form> para começar a criar o formulário-->
+        <!--<input> informa que haverá uma entrada de dados " type="" name"" "-->
+        <!--Type = para informar o tipo de informação, e name = para fazer a recuperacao destes dados inseridos (atribuir somente se quiser recuperar algum dado que for inserido)-->
+        <!-- dentro do <form> podemos informar para onde será enviado os dados do formulario ex: <form action="destino.extencao"-->
+        <form>
+
+            Login:<br>
+            <input type="text" name="login"><br>
+
+            Senha:<br>
+            <input type="password" name="senha"><br>
+            <!-- "value" posso atribuir o nome para o botao -->
+            <!-- type="button"(cria um botão e podemos fazer algo com javascript por exemplo), type="submit"(enviar formulario)-->
+            <input type="submit" value="Acessar">
+            <br>
+            <a href="cadastro.html" target="_blank">Cadastre-se</a>
+        </form>
+        <hr>
+
+        
     </body>
 
 </html>
